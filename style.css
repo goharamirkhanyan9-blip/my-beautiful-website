@@ -1,0 +1,66 @@
+body {
+margin: 0;
+font-family: "Poppins", sans-serif;
+background: #f5f7fa;
+color: #333;
+}
+
+
+.hero {
+height: 60vh;
+background: linear-gradient(135deg, #7b2ff7, #f107a3);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+padding: 20px;
+}
+
+
+.hero h1 {
+font-size: 3rem;
+margin: 0;
+animation: fadeIn 1.2s ease;
+}
+
+
+.hero p {
+font-size: 1.2rem;
+margin-top: 10px;
+opacity: 0.9;
+}
+
+
+.features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 40px;
+max-width: 1200px;
+margin: auto;
+}
+
+
+.card {
+background: white;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+text-align: center;
+font-size: 1.2rem;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
